@@ -12,3 +12,4 @@ function fixTriangles(){
 }
 
 document.addEventListener('DOMContentLoaded', fixTriangles);
+//test
