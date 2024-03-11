@@ -12,4 +12,5 @@ function fixTriangles(){
 }
 
 document.addEventListener('DOMContentLoaded', fixTriangles);
+document.addEventListener('resize', fixTriangles);
 //test

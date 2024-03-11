@@ -4,7 +4,9 @@
     font-style: normal;
     color:white;
 }
-
+*{
+    margin:0px;
+}
 .alegreya-sans-black {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 900;
@@ -17,13 +19,16 @@ header{
     width:100%;
     height:5.5vw;
     background-color: rgba(115, 115, 115, 0);
+    z-index: 1;
 }
 
-video{
+#background-video{
     position:absolute;
     z-index:-1;
     width:100%;
+    height:100%;
     filter: brightness(50%);
+    object-fit:cover;
 }
 
 body{
@@ -52,15 +57,19 @@ body{
     color:white;
     font-size: 18pt;
 }
+.header-link:hover{
+    cursor:pointer;
+}
 
-.img1{
+#title-section{
     background-image: url("https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4");
     background-repeat: no-repeat;
     background-size:cover;
     height:auto;
     width:100%;
     color:white;
-    font-size:50px;
+    font-size:48pt;
+    position: relative;
 }
 
 .fade{
@@ -71,7 +80,6 @@ body{
 }
 
 .triangle{
-    color: white;
     width: 0;
     height: 0;
     border-left: 0px solid transparent;
@@ -91,22 +99,14 @@ body{
 }
 
 .title-container h1{
-    text-align: center;;
+    text-align: center;
 }
 
-.head1{
+.heading{
     font-size: 80px;
     background-color: rgb(128, 0, 32);
     text-align: center;
     padding:20px;
-    padding-bottom:30px;
-}
-
-.sec1{
-    background-color: rgb(128, 0, 32);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom:30px;
 }
 
@@ -119,24 +119,42 @@ body{
     margin-right:65px;
 }
 
-.img2{
-    margin: 20px;
-    margin-left:65px;
-    width: 55%;
-    height: 25%;
-    border-radius:10px;
-    border-image:10px;
-    border: 10px solid #ffffff;
-}
 
-.invertedTriangle{
+.inverse-triangle{
     width: 0;
-	height: 0;
-	border-left: 0px solid transparent;
-	border-right: 0px solid transparent;
-	border-top: 100px solid rgb(128, 0, 32);
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100px solid rgb(128, 0, 32);
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
 }
 
-.img2{
-    background-image: url("https://www.cvrobotics.org/wp-content/uploads/2016/05/13072641_1093960160626798_1247903605770693313_o.jpg");
+#about-section{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(128, 0, 32);
+}
+
+#about-info{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    grid-column-gap:30px;
+    margin-inline:5%;
+}
+
+#about-img{
+    width:100%;
+    border-radius: 30px;
+    border: solid 5px;
+}
+#about-desc{
+    padding-block: 10px;
+    border-top: solid;
+    border-bottom: solid;
+    font-size:2em;
+    text-align: center;
 }
