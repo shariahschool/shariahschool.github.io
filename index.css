@@ -79,6 +79,13 @@ body{
     position: relative;
 }
 
+.triangle-container{
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+
 .triangle{
     width: 0;
     height: 0;
@@ -104,10 +111,13 @@ body{
 
 .heading{
     font-size: 80px;
-    background-color: rgb(128, 0, 32);
     text-align: center;
     padding:20px;
     padding-bottom:30px;
+}
+
+.text-left{
+    text-align: left;
 }
 
 .text{
@@ -125,15 +135,15 @@ body{
     height: 0;
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 100px solid rgb(128, 0, 32);
+    border-top: 100px solid rgb(128, 0, 32);
     position: absolute;
-    bottom: 0;
-    background-color: transparent;
+    top: 0;
 }
 
 #about-section{
-    display:flex;
     flex-direction: column;
+    position:relative;
+    height: auto;
     background-color: rgb(128, 0, 32);
 }
 
@@ -143,7 +153,7 @@ body{
     align-items: center;
     justify-items: center;
     grid-column-gap:30px;
-    margin-inline:5%;
+    padding:5%;  
 }
 
 #about-img{
@@ -157,4 +167,47 @@ body{
     border-bottom: solid;
     font-size:2em;
     text-align: center;
+}
+#about-frc-section{
+    background-image: url("frc.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:auto;
+    box-shadow: inset 0 0 0 1000px rgba(54, 1, 1, 0.75);
+}
+#about-frc-info{
+    padding-block:5%;
+    text-align: center;
+    padding-inline:10%;
+    overflow-wrap: break-word;
+}
+.sub-heading{
+    font-size:300%;
+}
+.body-text{
+    font-size:200%;
+}
+#stats-section{
+    background-color: rgb(128, 0, 32);
+}
+#stat-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-block: 10%;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em
+}
+.stat-icon{
+    font-size: 1000%;
+}
+#filler-image{
+    height:40%;
+    background-image: url("filler.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
 }

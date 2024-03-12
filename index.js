@@ -5,7 +5,7 @@ function fixTriangles(){
     for (let i = 0; i < list.length; i++) {
         list[i].style.borderLeftWidth = document.body.clientWidth;;
     }
-    const list2 = document.getElementsByClassName('invertedTriangle');
+    const list2 = document.getElementsByClassName('inverse-triangle');
     for (let i = 0; i < list2.length; i++) {
         list2[i].style.borderRightWidth = document.body.clientWidth;;
     }
