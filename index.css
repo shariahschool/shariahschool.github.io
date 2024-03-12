@@ -211,3 +211,10 @@ body{
     background-repeat: no-repeat;
     opacity: 0.3;
 }
+#map-section{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
