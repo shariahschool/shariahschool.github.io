@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *, .alegreya-sans-bold {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 700;
@@ -96,6 +99,7 @@ body{
     bottom: 0;
 }
 
+
 .title-container{
     padding-top:5.5vh;
     display:flex;
@@ -193,7 +197,7 @@ body{
 #stat-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-block: 10%;
+    padding-bottom: 10%;
 }
 .stat{
     display: flex;
@@ -214,7 +218,16 @@ body{
 #map-section{
     position:relative;
     display:flex;
+    flex-direction: column;
+    background-color: rgb(128, 0, 32);
+    padding-bottom: 5%;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+footer{
+    background-image: linear-gradient(rgb(128, 0, 32),black, black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

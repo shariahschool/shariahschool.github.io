@@ -26,6 +26,13 @@ async function initMap() {
     clickableIcons: false,
 
   });
+  navigator.geolocation.getCurrentPosition((p)=>{
+    const pos = {
+      lat: p.coords.latitude,
+      lng: p.coords.longitude,
+    }
+    map.setCenter(pos);
+  });
   const infoWindow = new InfoWindow();
   fetch(frcData, {method:'GET'})
   .then((r) => r.json())

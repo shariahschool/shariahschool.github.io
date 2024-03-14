@@ -1,13 +1,15 @@
 #map{
-    width:90%;
-    height:90%;
+    width:85%;
+    height:85%;
     color:black;
 }
 .map-info{
     font-family: Arial, Helvetica, sans-serif;
     color:black;
+    text-align: center;
 }
 .map-title{
     font-family: Arial, Helvetica, sans-serif;
     color:black;
+    text-align: center;
 }
