@@ -59,6 +59,7 @@ body{
 .header-link{
     color:white;
     font-size: 18pt;
+    text-decoration: none;
 }
 .header-link:hover{
     cursor:pointer;
